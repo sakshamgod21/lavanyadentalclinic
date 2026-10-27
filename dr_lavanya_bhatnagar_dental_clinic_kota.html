@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lavanya Bhatnagar Dental Clinic | Civil Lines, Nayapura, Kota</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepTeal: {
+                            50: '#f0f9fa',
+                            100: '#d5eff2',
+                            500: '#178a9c',
+                            700: '#0c6675',
+                            800: '#084c61', // Deep Medical Teal
+                            900: '#053545',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981', // Soft Emerald
+                            600: '#059669',
+                        },
+                        goldAccent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b', // Gold Accent
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        .bg-hero-pattern {
+            background: radial-gradient(circle at 85% 15%, rgba(52, 211, 153, 0.12) 0%, transparent 45%),
+                        linear-gradient(135deg, #053545 0%, #084c61 60%, #0c6675 100%);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass-dark {
+            background: rgba(5, 53, 69, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+        }
+
+        @keyframes pulse-emerald {
+            0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.8); }
+        }
+        .btn-glow {
+            animation: pulse-emerald 3s infinite;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #053545; }
+        ::-webkit-scrollbar-thumb { background: #178a9c; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+    <!-- Emergency Hotline Banner -->
+    <div class="bg-gradient-to-r from-emerald-600 via-deepTeal-700 to-emerald-600 text-white text-xs md:text-sm py-2.5 px-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-goldAccent-500 text-slate-950 font-black px-2.5 py-0.5 rounded text-[11px] uppercase tracking-wider">Top Rated Clinic</span>
+                <span class="font-medium">Emergency Dental Care & Immediate Consultations in Nayapura, Kota</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:08890251088" class="hover:underline flex items-center gap-1.5 font-bold text-amber-300">
+                    <i class="fa-solid fa-phone-volume animate-bounce"></i> Call Now: 088902 51088
+                </a>
+                <a href="https://wa.me/918890251088?text=Hello%20Dr.%20Lavanya%20Bhatnagar%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black px-3 py-1 rounded-full text-xs flex items-center gap-1 shadow transition-transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-deepTeal-900/90 backdrop-blur-md border-b border-deepTeal-500/20 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-emerald-500 via-deepTeal-500 to-goldAccent-400 rounded-2xl flex items-center justify-center text-slate-950 shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl group-hover:rotate-12 transition-transform"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-black tracking-tight text-white block leading-tight">Dr. Lavanya Bhatnagar</span>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Dental Clinic • Nayapura, Kota</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <nav class="hidden lg:flex items-center gap-7">
+                    <a href="#home" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Services</a>
+                    <a href="#transformations" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Smile Transformations</a>
+                    <a href="#calculator" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Cost Estimator</a>
+                    <a href="#reviews" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Reviews</a>
+                    <a href="#location" class="text-slate-200 hover:text-emerald-400 font-medium transition-colors">Contact & Map</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openBookingModal()" class="btn-glow bg-gradient-to-r from-emerald-500 to-deepTeal-500 hover:from-emerald-400 hover:to-deepTeal-700 text-slate-950 px-5 py-2.5 rounded-xl font-black text-sm shadow-lg transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-base"></i>
+                        <span>Book Appointment</span>
+                    </button>
+                    
+                    <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-200 hover:bg-slate-800" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-deepTeal-900 border-b border-deepTeal-500/20 px-4 pt-2 pb-6 space-y-3 shadow-2xl">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Home</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Services</a>
+            <a href="#transformations" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Smile Transformations</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Cost Estimator</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Reviews</a>
+            <a href="#location" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-200 hover:bg-slate-800 hover:text-emerald-400">Contact & Map</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-hero-pattern py-14 lg:py-24 border-b border-deepTeal-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Badges Row -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3">
+                        <span class="bg-goldAccent-500/20 border border-goldAccent-500/40 text-goldAccent-400 font-extrabold px-3.5 py-1.5 rounded-full text-xs sm:text-sm flex items-center gap-1.5 shadow">
+                            <i class="fa-solid fa-star"></i> 4.9★ Rating (82+ Reviews)
+                        </span>
+                        <span class="bg-deepTeal-700/80 border border-emerald-500/30 text-emerald-300 font-semibold px-3.5 py-1.5 rounded-full text-xs sm:text-sm flex items-center gap-1.5 shadow">
+                            <i class="fa-solid fa-location-dot text-emerald-400"></i> Civil Lines, Nayapura, Kota
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                        Gentle, Advanced & <br>
+                        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-goldAccent-400 bg-clip-text text-transparent">Painless Dental Care</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Experience world-class dental treatments in Kota with state-of-the-art diagnostic tools, personalized treatment plans, and strict hospital-grade sterilization protocols.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openBookingModal()" class="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-deepTeal-500 hover:from-emerald-400 hover:to-deepTeal-700 text-slate-950 font-black px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/20 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3 text-base">
+                            <i class="fa-solid fa-calendar-check text-xl"></i>
+                            <span>Quick Appointment Booking</span>
+                        </button>
+                        <a href="tel:08890251088" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-800 text-white border border-emerald-500/40 font-bold px-7 py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center gap-2.5 text-base">
+                            <i class="fa-solid fa-phone text-emerald-400"></i>
+                            <span>Call: 088902 51088</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Bar -->
+                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 border-t border-slate-700/60 max-w-xl mx-auto lg:mx-0 text-left">
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Single-Sitting RCT Specialist
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> Ultrasonic Cleaning
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Sterile Protocol
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-emerald-400 via-deepTeal-500 to-goldAccent-500 rounded-3xl blur-xl opacity-30"></div>
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-emerald-500/30 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Dr Lavanya Bhatnagar Dental Clinic Interior" class="w-full h-[420px] object-cover">
+                            
+                            <div class="absolute bottom-4 left-4 right-4 glass-dark p-4 rounded-2xl shadow-xl flex items-center justify-between border border-emerald-500/30">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-award text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-300 font-semibold">Location Partner</p>
+                                        <p class="text-sm font-black text-white">Opp. Holy Angels School</p>
+                                    </div>
+                                </div>
+                                <span class="bg-goldAccent-500 text-slate-950 text-xs px-3 py-1 rounded-full font-black uppercase">Kota Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Grid -->
+    <section id="services" class="py-16 lg:py-24 bg-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-deepTeal-700/60 text-emerald-400 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-emerald-500/30">Specialized Treatments</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Comprehensive Dental Care Services</h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">Modern solutions executed with gentle care and high-end equipment at Nayapura, Kota.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: RCT -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Root Canal Treatment (RCT)</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Painless single-sitting RCT to save natural damaged or infected teeth with minimal discomfort.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2: Teeth Whitening -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Laser Teeth Whitening</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Advanced whitening technology to remove stubborn discoloration and brighten your smile shades lighter.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3: Orthodontics / Braces -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-teeth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Orthodontics & Braces</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Align crooked teeth, fix overbites, and close gaps using traditional ceramic braces or clear aligners.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4: Dental Implants -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-teeth-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Dental Implants</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Permanent, durable tooth replacements that match the exact strength and appearance of natural teeth.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5: Cosmetic Dentistry -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Cosmetic Dentistry</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Veneers, dental bonding, and full smile design to give you a bright, flawless visual aesthetic.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6: Pediatric Dentistry -->
+                <div class="bg-slate-800/80 rounded-2xl p-6 border border-deepTeal-500/20 hover:border-emerald-400/50 shadow-lg hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 bg-deepTeal-700/50 group-hover:bg-emerald-500 text-emerald-400 group-hover:text-slate-950 rounded-2xl flex items-center justify-center text-2xl mb-6 transition-colors duration-300">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Pediatric Dentistry</h3>
+                        <p class="text-slate-300 text-sm mb-4 leading-relaxed">Friendly and gentle dental treatments for kids, including fluoride treatments, sealants, and cavity preventive care.</p>
+                    </div>
+                    <button onclick="openBookingModal()" class="w-full py-2.5 bg-slate-700/50 group-hover:bg-emerald-500 group-hover:text-slate-950 text-emerald-300 font-bold rounded-xl text-sm transition-all text-center">
+                        Book Consultation <i class="fa-solid fa-arrow-right text-xs ms-1"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Transformation Slider -->
+    <section id="transformations" class="py-16 lg:py-24 bg-deepTeal-900 border-t border-b border-deepTeal-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-emerald-500/30">Real Results</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Interactive Smile Transformation</h2>
+                <p class="text-slate-300 mt-2 text-sm">Drag the handle to observe actual tooth restorative results achieved at our clinic.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="relative w-full h-[320px] sm:h-[420px] rounded-3xl overflow-hidden shadow-2xl border-4 border-deepTeal-500/30 select-none" id="comparisonSlider">
+                    <!-- Before Image -->
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1000" alt="Before Smile Treatment" class="absolute inset-0 w-full h-full object-cover">
+                    <span class="absolute bottom-4 left-4 bg-slate-950/80 text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 backdrop-blur-sm z-10">BEFORE</span>
+
+                    <!-- After Image Overlay -->
+                    <div class="absolute inset-0 w-1/2 overflow-hidden" id="afterContainer">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1000" alt="After Smile Treatment" class="absolute top-0 left-0 max-w-none h-full object-cover" id="afterImg">
+                        <span class="absolute bottom-4 right-4 bg-emerald-500 text-slate-950 text-xs font-black px-3 py-1.5 rounded-lg shadow-lg z-10">AFTER TREATMENT</span>
+                    </div>
+
+                    <!-- Draggable Handle Bar -->
+                    <div class="absolute top-0 bottom-0 left-1/2 w-1 bg-emerald-400 cursor-ew-resize z-20 flex items-center justify-center" id="sliderHandle">
+                        <div class="w-10 h-10 bg-emerald-500 text-slate-950 rounded-full flex items-center justify-center shadow-xl border-2 border-white">
+                            <i class="fa-solid fa-arrows-left-right text-sm font-bold"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-xs text-slate-400 mt-4"><i class="fa-solid fa-hand-pointer me-1 text-emerald-400"></i> Drag the slider left or right to compare</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Treatment Cost Estimator -->
+    <section id="calculator" class="py-16 lg:py-24 bg-slate-900 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="bg-goldAccent-500/20 text-goldAccent-400 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-goldAccent-500/30">Transparent Pricing</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Interactive Treatment Cost Estimator</h2>
+                <p class="text-slate-400 text-sm mt-2">Get an instant estimate for your dental treatment in Kota.</p>
+            </div>
+
+            <div class="glass-dark p-6 sm:p-10 rounded-3xl shadow-2xl border border-emerald-500/30">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Select Procedure:</label>
+                        <select id="calcProcedure" onchange="calculateCost()" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                            <option value="scaling">Ultrasonic Scaling & Cleaning</option>
+                            <option value="rct">Root Canal Treatment (RCT)</option>
+                            <option value="braces">Braces / Aligners</option>
+                            <option value="whitening">Laser Teeth Whitening</option>
+                            <option value="implant">Dental Implant</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Case Severity / Option:</label>
+                        <select id="calcComplexity" onchange="calculateCost()" class="w-full bg-slate-900 border border-slate-700 text-white text-sm rounded-xl p-3.5 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                            <option value="standard">Standard Procedure</option>
+                            <option value="moderate">Moderate Complexity</option>
+                            <option value="complex">Advanced / Premium Option</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-slate-400 font-bold uppercase tracking-wider block">Estimated Fee Range</span>
+                        <div class="text-3xl sm:text-4xl font-black text-emerald-400 mt-1" id="costResult">₹800 - ₹1,500</div>
+                        <span class="text-[11px] text-slate-400">*Final quote delivered post clinical oral consultation</span>
+                    </div>
+
+                    <button onclick="openBookingModal()" class="bg-gradient-to-r from-emerald-500 to-deepTeal-500 hover:from-emerald-400 hover:to-deepTeal-700 text-slate-950 font-black px-6 py-3.5 rounded-xl transition-all text-sm shadow-xl flex items-center gap-2">
+                        <span>Book Appointment</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-16 lg:py-24 bg-deepTeal-900 border-t border-b border-deepTeal-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-goldAccent-500/20 text-goldAccent-400 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-goldAccent-500/30">Verified Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Patient Stories & Reviews (4.9★)</h2>
+                <p class="text-slate-300 text-sm mt-2">Trusted by 82+ verified Google reviewers in Civil Lines & Nayapura, Kota.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-4 leading-relaxed">
+                            "Dr. Lavanya Bhatnagar is extremely gentle and skilled. Had a single-sitting RCT done smoothly without any pain. Highly recommended clinic in Nayapura Kota!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500 text-slate-950 font-bold flex items-center justify-center text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Saurabh Kumar</h5>
+                            <span class="text-xs text-emerald-400 font-semibold">Verified Google Reviewer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-4 leading-relaxed">
+                            "Clean, modern setup right opposite Holy Angels School. The doctor explained the procedure clearly before starting. Transparent pricing and great behavior."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-goldAccent-500 text-slate-950 font-bold flex items-center justify-center text-sm">
+                            PR
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Priya Rathore</h5>
+                            <span class="text-xs text-emerald-400 font-semibold">Civil Lines, Kota</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-4 leading-relaxed">
+                            "Got laser teeth whitening done here. Amazing results! Excellent sterilization hygiene and attentive medical staff."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-deepTeal-500 text-white font-bold flex items-center justify-center text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Amit Meena</h5>
+                            <span class="text-xs text-emerald-400 font-semibold">Verified Google Reviewer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact & Location Section -->
+    <section id="location" class="py-16 lg:py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="bg-emerald-500/20 text-emerald-300 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-emerald-500/30">Clinic Location</span>
+                    <h2 class="text-3xl font-extrabold text-white">Dr. Lavanya Bhatnagar Dental Clinic</h2>
+                    <p class="text-slate-300 text-sm">Conveniently located in Civil Lines, Nayapura, opposite Holy Angels School in Kota.</p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 flex items-center justify-center shrink-0 mt-1 font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-white text-sm">Full Address</h5>
+                                <p class="text-slate-300 text-sm mt-0.5">16-B, opposite Holy Angels School, Civil Lines, Nayapura, Kota, Rajasthan 324001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 flex items-center justify-center shrink-0 mt-1 font-bold">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-white text-sm">Opening Hours</h5>
+                                <p class="text-slate-300 text-sm mt-0.5">Mon - Sat: 10:00 AM - 8:00 PM</p>
+                                <p class="text-slate-300 text-sm">Sun: 11:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 flex items-center justify-center shrink-0 mt-1 font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-white text-sm">Phone Number</h5>
+                                <a href="tel:08890251088" class="text-emerald-400 font-bold text-base hover:underline">088902 51088</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex gap-3">
+                        <a href="https://maps.app.goo.gl/SFaBNL7nfbuSaAx98" target="_blank" class="w-full bg-gradient-to-r from-emerald-500 to-deepTeal-500 hover:from-emerald-400 text-slate-950 font-black py-3.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Open in Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 bg-slate-800 p-3 rounded-3xl border border-deepTeal-500/30 shadow-2xl overflow-hidden">
+                    <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.776654789512!2d75.8450!3d25.1380!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f84d000000001%3A0x1!2sNayapura%2C%20Kota%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center text-slate-950 font-bold">
+                        <i class="fa-solid fa-tooth text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="text-white font-bold block text-base">Dr Lavanya Bhatnagar Dental Clinic</span>
+                        <span class="text-xs text-slate-400">16-B, opp. Holy Angels School, Civil Lines, Nayapura, Kota</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400">© 2026 Dr. Lavanya Bhatnagar Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Appointment Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-emerald-500/40">
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div id="bookingStep1">
+                <div class="text-center mb-6">
+                    <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-regular fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-white">Book Appointment</h3>
+                    <p class="text-xs text-slate-400 mt-1">Dr. Lavanya Bhatnagar Dental Clinic • Civil Lines, Kota</p>
+                </div>
+
+                <form onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Procedure *</label>
+                        <select id="bookService" required class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                            <option value="Consultation">General Dental Checkup</option>
+                            <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
+                            <option value="Laser Whitening">Teeth Whitening</option>
+                            <option value="Braces Alignment">Braces / Aligners</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Pediatric Care">Pediatric Dentistry</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Date *</label>
+                            <input type="date" required id="bookDate" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Time Slot *</label>
+                            <select id="bookTime" required class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="04:30 PM">04:30 PM</option>
+                                <option value="06:30 PM">06:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Patient Name *</label>
+                        <input type="text" required id="bookName" placeholder="Full Name" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Mobile Number *</label>
+                        <input type="tel" required id="bookPhone" placeholder="10-digit phone number" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-3 text-sm focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-deepTeal-500 hover:from-emerald-400 text-slate-950 font-black py-3.5 rounded-xl text-sm transition-all shadow-lg mt-2">
+                        Confirm Appointment Request
+                    </button>
+                </form>
+            </div>
+
+            <!-- Confirmation Step -->
+            <div id="bookingStep2" class="hidden text-center py-6">
+                <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-white mb-2">Appointment Requested!</h3>
+                <p class="text-xs text-slate-400 mb-6">Our clinic staff will call <strong>088902 51088</strong> to verify your slot confirmation.</p>
+                <button onclick="closeBookingModal()" class="w-full bg-slate-800 text-white font-bold py-3 rounded-xl text-sm">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('bookDate').valueAsDate = new Date();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('bookingStep1').classList.remove('hidden');
+            document.getElementById('bookingStep2').classList.add('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            document.getElementById('bookingStep1').classList.add('hidden');
+            document.getElementById('bookingStep2').classList.remove('hidden');
+        }
+
+        // Treatment Cost Estimator logic
+        function calculateCost() {
+            const proc = document.getElementById('calcProcedure').value;
+            const comp = document.getElementById('calcComplexity').value;
+            const res = document.getElementById('costResult');
+
+            let min = 800, max = 1500;
+            if(proc === 'rct') { min = 2500; max = 4500; }
+            if(proc === 'braces') { min = 18000; max = 35000; }
+            if(proc === 'whitening') { min = 3000; max = 6000; }
+            if(proc === 'implant') { min = 16000; max = 30000; }
+
+            let mult = 1;
+            if(comp === 'moderate') mult = 1.25;
+            if(comp === 'complex') mult = 1.5;
+
+            res.innerText = `₹${Math.round(min * mult).toLocaleString()} - ₹${Math.round(max * mult).toLocaleString()}`;
+        }
+
+        // Before/After Slider Interaction
+        const sliderContainer = document.getElementById('comparisonSlider');
+        const afterContainer = document.getElementById('afterContainer');
+        const afterImg = document.getElementById('afterImg');
+        const handle = document.getElementById('sliderHandle');
+        let isDragging = false;
+
+        function updateSlider(x) {
+            const rect = sliderContainer.getBoundingClientRect();
+            let position = x - rect.left;
+            if (position < 0) position = 0;
+            if (position > rect.width) position = rect.width;
+
+            const percentage = (position / rect.width) * 100;
+            afterContainer.style.width = `${percentage}%`;
+            handle.style.left = `${percentage}%`;
+            afterImg.style.width = `${rect.width}px`;
+        }
+
+        if(sliderContainer) {
+            window.addEventListener('resize', () => {
+                if(sliderContainer) afterImg.style.width = `${sliderContainer.getBoundingClientRect().width}px`;
+            });
+            sliderContainer.addEventListener('mousedown', () => isDragging = true);
+            window.addEventListener('mouseup', () => isDragging = false);
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                updateSlider(e.clientX);
+            });
+            sliderContainer.addEventListener('touchstart', () => isDragging = true);
+            window.addEventListener('touchend', () => isDragging = false);
+            window.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                updateSlider(e.touches[0].clientX);
+            });
+        }
+    </script>
+</body>
+</html>
